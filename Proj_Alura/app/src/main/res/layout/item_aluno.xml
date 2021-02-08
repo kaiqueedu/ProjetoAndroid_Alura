@@ -10,13 +10,13 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:layout_margin="8dp"
-        tools:text="Nome" />
+        tools:text="@string/nome_aluno" />
 
     <TextView android:id="@+id/aluno_telefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        tools:text="332321" />
+        tools:text="@string/telefone" />
 
 </LinearLayout>

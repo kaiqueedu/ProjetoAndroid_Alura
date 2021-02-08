@@ -5,8 +5,8 @@ import com.myProj.agenda.model.Aluno
 class AlunoDAO {
 
     companion object {
-        private var listAlunos: ArrayList<Aluno> = ArrayList()
-        var contadorIds = 1
+        private var listAlunos: MutableList<Aluno>  = mutableListOf()
+        var contadorIds: Long = 1
     }
 
     fun salva(aluno: Aluno) {
@@ -28,8 +28,8 @@ class AlunoDAO {
         }
     }
 
-    fun getListAlunos(): List<Aluno>{
-        val novaLista: List<Aluno> = listAlunos
+    fun getListAlunos(): MutableList<Aluno> {
+        val novaLista: MutableList<Aluno>  = listAlunos
         return novaLista
     }
 
@@ -41,7 +41,7 @@ class AlunoDAO {
 
     }
 
-    private fun buscaAlunoPorId(id: Int?): Aluno? {
+    private fun buscaAlunoPorId(id: Long?): Aluno? {
         var alunoEncontrado: Aluno? = null
 
         if(id != null){

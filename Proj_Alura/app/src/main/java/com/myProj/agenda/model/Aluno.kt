@@ -4,12 +4,12 @@ import java.io.Serializable
 
 class Aluno: Serializable {
 
-    var id: Int? = 0
+    var id: Long? = 0
     var nome: String? = null
     var telefone: String? = null
     var email: String? = null
 
-    constructor(id: Int, nome:String, telefone: String, email: String){
+    constructor(id: Long, nome:String, telefone: String, email: String){
         this.id = id
         this.nome = nome
         this.telefone = telefone
